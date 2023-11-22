@@ -11,6 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        resizeToAvoidBottomInset: false,
         appBar: AppBar(
           title: const Text(
             'login page',
@@ -86,6 +87,7 @@ class MyApp extends StatelessWidget {
                   ElevatedButton(
                     style: ElevatedButton.styleFrom(
                       fixedSize: const Size(250, 55),
+                      backgroundColor: Colors.blue,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20),
                       ),
